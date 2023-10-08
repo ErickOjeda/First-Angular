@@ -12,6 +12,7 @@ import { LivrosListComponent } from './livro/livros-list/livros-list.component';
 import { LoginComponent } from './system/login/login.component';
 import { CarroDetailsComponent } from './carro/carro-details/carro-details.component';
 import { LivroDetailComponent } from './livro/livro-detail/livro-detail.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LivroDetailComponent } from './livro/livro-detail/livro-detail.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

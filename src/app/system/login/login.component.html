@@ -4,18 +4,18 @@
   <form>
 
     <div class="form-outline mb-4">
-      <label class="form-label" for="form2Example1">Email address</label>
+      <label class="form-label" for="email-input">Email address</label>
 
-      <input type="email" id="form2Example1" class="form-control" />
+      <input type="email" id="email-input" class="form-control" name="email" [(ngModel)]="usuario.login"/>
     </div>
 
     <div class="form-outline mb-4">
-      <label class="form-label" for="form2Example2">Password</label>
+      <label class="form-label" for="password-input">Password</label>
 
-      <input type="password" id="form2Example2" class="form-control" />
+      <input type="password" id="password-input" class="form-control" [(ngModel)]="usuario.senha" name="password"/>
     </div>
 
-    <button routerLink="/admin/carros" type="button" class="btn btn-primary btn-block mb-4">Login</button>
+    <button (click)="logar()" type="button" class="btn btn-primary btn-block mb-4">Login</button>
 
   </form>
 </div>

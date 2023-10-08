@@ -16,13 +16,13 @@ const routes: Routes = [
   {
     path: "admin", component: IndexComponent, children: [
 
+
+      { path: "carros", component: CarrosListComponent },
+      { path: "carros/editar/:id", component: CarroDetailsComponent },
+
       { path: "livros", component: LivrosListComponent },
       { path: "livros/novo", component: LivroDetailComponent },
       { path: "livros/editar/:id", component: LivroDetailComponent },
-
-      { path: "carros", component: CarrosListComponent },
-      { path: "carros/novo", component: CarroDetailsComponent },
-      { path: "carros/editar/:id", component: CarroDetailsComponent },
 
     ]
   }
