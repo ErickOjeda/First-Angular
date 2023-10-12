@@ -8,7 +8,7 @@
                     <tr>
                         <th scope="col">#ID</th>
                         <th scope="col">Nome</th>
-                        <th scope="col">Escritor</th>
+                        <th scope="col">Autor</th>
                         <th scope="col">Ações</th>
                     </tr>
                 </thead>
@@ -16,7 +16,7 @@
                     <tr *ngFor="let livro of lista; let i = index">
                         <th scope="row">{{ livro.id }}</th>
                         <td> {{ livro.nome }} </td>
-                        <td> {{ livro.escritor }} </td>
+                        <td> {{ livro.autor }} </td>
                         <td> <button class="btn btn-secondary" (click)="editar(modal1, livro, i)">Editar</button> </td>
                     </tr>
                 </tbody>
