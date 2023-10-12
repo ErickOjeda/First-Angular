@@ -1,0 +1,29 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-lg-4">
+            <br>
+        </div>
+        <div class="col-lg-4">
+            <form (ngSubmit)="logar()">
+                <div class="mb-3">
+                    <label for="exampleInputText1" class="form-label">Login:</label>
+                    <input type="text" class="form-control" name="exampleInputText1" aria-describedby="emailHelp"
+                        [(ngModel)]="usuario.login">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Senha:</label>
+                    <input type="password" class="form-control" name="exampleInputPassword1"
+                        [(ngModel)]="usuario.senha">
+                </div>
+                <button type="submit" class="btn btn-primary">Logar</button>
+            </form>
+        </div>
+        <div class="col-lg-4">
+            <br>
+        </div>
+
+    </div>
+
+</div>
