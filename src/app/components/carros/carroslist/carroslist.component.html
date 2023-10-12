@@ -15,7 +15,7 @@
                 <tbody>
                     <tr *ngFor="let carro of lista; let i = index">
                         <th scope="row">{{ carro.id }}</th>
-                        <td> {{ carro.nome }} </td>
+                        <td> {{ carro.modelo }} </td>
                         <td> {{ carro.ano }} </td>
                         <td> <button class="btn btn-secondary" (click)="editar(modal1, carro, i)">Editar</button> </td>
                     </tr>

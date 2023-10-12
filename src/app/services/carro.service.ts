@@ -8,7 +8,7 @@ import { Carro } from '../models/carro';
 })
 export class CarroService {
 
-  API: string = 'http://localhost:8080/api/pessoa';
+  API: string = 'http://localhost:8080/api/carro';
   http = inject(HttpClient);
 
   constructor() { }
@@ -28,6 +28,6 @@ export class CarroService {
 
 
 
-  
+
 
 }
